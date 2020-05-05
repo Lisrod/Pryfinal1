@@ -1,0 +1,73 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+.container--redes{
+  width:100px;
+  left:0;
+  position:fixed;
+  top:0%;
+  margin-top: 50vh;
+  }
+
+.icon{
+  top:50%;
+  position:relative;
+  margin-bottom:10px;
+  }
+
+.icon-primary{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  border-radius:100%;
+  position:relative;
+  z-index:1;
+  box-shadow:1px 0 1px rgba(0,0,0,.5);
+  height:30px;
+  width:30px;
+  text-align:center;
+  line-height:30px;
+  }
+
+.container-description{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:24px;
+
+}
+
+.icon-description{
+  width:250px;
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  height:30px;
+  line-height:30px;
+  padding-left:30px;
+  border-radius:0 20px 20px 0;
+  transform: translate3d(-110%, 0, 0);
+  transition:transform 175ms ease;
+}
+
+.icon-primary:hover  ~ .container-description .icon-description{
+  transform: translate(0, 0);
+  
+}
+
+
+.color-twitter{
+  background-color:#3B94D9;
+}
+
+.color-instragram{
+  background-color:#dd4339;
+}
+
+

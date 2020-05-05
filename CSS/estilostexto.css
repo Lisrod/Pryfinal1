@@ -1,0 +1,224 @@
+
+/* Responsive para pantallas pequeñas */
+
+@media (max-width: 600px) {
+  .menu li, article, .content {
+    width: 100%;
+    height: auto;
+    min-height: auto;    
+  }
+  
+  .container {
+    overflow: hidden;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
+
+  
+/* Estilos Generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body { 
+  min-height: 100vh;
+  overflow: auto;
+  background: radial-gradient(circle, rgba(30,100,96,0) 1%, rgba(91,193,186,0.5156202129289216) 48%);
+}
+
+h1 {
+  color: rgb(54, 54, 155);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 180%;
+}
+
+p  {
+  color: black;
+  font-family: courier;
+  line-height: 180%;
+}
+
+
+/* ESTA ES LA CABECERA*/
+
+.cabecera {
+	overflow: hidden;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(9,9,121,1) 100%);
+}
+.cabecera img {
+	display: block;
+	margin: auto;
+}
+
+.cabecera h1 {
+  padding: 8px 0;
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: uppercase;	
+  color: whitesmoke;
+}
+
+.cabecera h3 {
+  padding:5px 0;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: cyan;	
+}
+
+/* menu */
+
+.menu {
+	background: #333;
+	overflow: hidden;
+  padding: 15px;
+  position: sticky;
+}
+
+.menu ul {
+  list-style: none;
+  display: inline;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+  
+.menu li {
+  float: left;
+}
+  
+.menu li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 14px;
+  text-decoration: none;
+}
+  
+.menu li a:hover:not(.active) {
+  color: cyan;
+}
+  
+.menu .active {
+  background-color: #4CAF50;
+}
+
+/* AQUI COMIENZA EL CUERPO */
+
+.container
+  {
+  overflow: hidden;
+  margin: 0em auto;
+  width: 1200px;
+}
+	
+.image img
+	{
+	display: block;
+	width: 100%;
+}
+	
+.image-full
+	{
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+	
+.caja
+	{
+	width: 384px;
+  text-align: justify;
+  float: left;
+	margin-right: 200px;
+}
+
+
+#page
+	{
+	position: center;
+	overflow: hidden;
+	padding: 1em 1em;
+}
+  
+.caja
+	{
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+	
+.caja span
+	{
+	margin: 0;
+	padding: 0.5em 0.5em;
+	background: #033124;
+	display: block;
+	line-height: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #FFF;
+}
+  
+
+.parallax {
+  text-align: center;
+  width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.parallax a {
+  text-align: center;
+  display: block;
+	padding: 10px;
+	width: 150px;
+	text-decoration: none;
+	background: #000000;
+	color: #ffffff;
+	margin: 50px auto 50px auto;
+	transition: 1s;
+}
+
+.parallax a:hover {
+  text-align: center;
+  background: cyan;
+	color: #000000;
+}
+
+
+
+/* PIE DE PAGINA */
+
+footer {
+  position: center;
+  padding-top: 15px;
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center; 
+}
+
+
+
